@@ -1,0 +1,43 @@
+package ArreglosBidimensionales;
+import java.util.Scanner;
+public class Matrices {
+	public static void main (String [] args) {
+	
+		Scanner SC=new Scanner(System.in);
+		
+		System.out.print("Ingrese el tamaño de la matriz: filas");
+		int cantfilas=SC.nextInt();
+		
+		
+		System.out.print("Ingrese el tamaño de la matriz: columnas");
+		int cantcolumnas=SC.nextInt();
+		
+		
+		int[][] matrizA = new int[cantfilas][cantcolumnas];
+	
+	System.out.println("Ingrese los datos de la matriz");	
+		for(int i =  0; i<cantfilas; i++) {
+			
+			for(int j = 0; j<cantcolumnas; j++) {
+				System.out.print("Dato("+i+ ","+j+") =");
+				matrizA[i][j]= SC.nextInt();
+			}
+			
+		}
+		
+		System.out.println("Los datos de la matriz son ");
+		for(int i = 0; i< cantfilas; i++) {
+			for(int j = 0; j<cantcolumnas; j++) {
+				
+				System.out.print(matrizA[i][j] + "");
+				
+				
+			}
+			System.out.println();
+		}
+		
+		
+		System.out.println("Fin del programa ");
+	}
+
+}
